@@ -20,7 +20,10 @@ config :ash,
   read_action_after_action_hooks_in_order?: true,
   bulk_actions_default_to_errors?: true,
   known_types: [AshMoney.Types.Money],
-  custom_types: [money: AshMoney.Types.Money]
+  custom_types: [
+    money: AshMoney.Types.Money,
+    custom_float: DemoRepo.Types.CustomFloat
+  ]
 
 config :spark,
   formatter: [
