@@ -9,3 +9,14 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+DemoRepo.Entities.Entity
+|> Ash.Changeset.for_create(
+  :create,
+  %{
+    name: "Joe",
+    size: 0.314,
+    balance: "42 USD"
+  }
+)
+|> Ash.create!()

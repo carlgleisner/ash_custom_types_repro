@@ -1,5 +1,15 @@
 # Reproduction for custom `Ash.Type` question
 
+## Running the reproduction
+
+```sh
+mix setup && iex -S mix phx.server
+```
+
+http://localhost:4000/admin?domain=Entities&resource=Entity&table=&action_type=read&action=read
+
+## Description
+
 This is a reproduction of an issue I've had with custom types.
 
 In short, using the example implementation for float from the documentation resets the attribute upon validation when changing other attributes in the changeset (AshAdmin).
