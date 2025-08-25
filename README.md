@@ -234,19 +234,13 @@ leaving the field `:balance` with the value `nil` in the form. Since one cannot 
 - `macOS 15.6`
 - `erlang 27.3.4`
 - `elixir 1.18.4-otp-27`
-- `ash 3.5.33`
-- `ash_admin 0.13.13` <- Only tested in AshAdmin
+- `ash 3.5.36`
+- `ash_admin 0.13.17` <- Only tested in AshAdmin
 - `ash_money 0.2.3`
-- `ash_phoenix 2.3.12`
-- `ash_postgres 2.6.14`
-- `ash_sql 0.2.89`
-- `phoenix_live_view 1.1.3` <- ?⚠️
-
-BTW, LiveView complains about asset versions:
-
-```
-LiveView asset version mismatch. JavaScript version 1.1.0-rc.3 vs. server 1.1.3. To avoid issues, please ensure that your assets use the same version as the server.
-```
+- `ash_phoenix 2.3.14`
+- `ash_postgres 2.6.16`
+- `ash_sql 0.2.90`
+- `phoenix_live_view 1.1.8` <- ?⚠️
 
 ### Generation
 
